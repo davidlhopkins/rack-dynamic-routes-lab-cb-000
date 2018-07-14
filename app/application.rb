@@ -12,7 +12,7 @@ class Application
       item_search = @@items.find{|item| item.name == item_name}
 
       if item_search
-        resp.write found_item.price
+        resp.write found_search.price
       else
         resp.write "Item not found"
         resp.status = 400
